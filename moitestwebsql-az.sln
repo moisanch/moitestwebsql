@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moitestwebsql-az", "moitestwebsql-az\moitestwebsql-az.csproj", "{FC4043E6-ACD7-4D20-943C-CA6AAC84E6A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{FA85C86B-FABD-4A93-91BD-26791004F1E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{3BEEBBE2-542A-414C-A10F-BF7954E532D9}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\ConfigureWebServer.ps1 = PublishScripts\Scripts\ConfigureWebServer.ps1
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{5819F961-2302-4A88-88DC-FC01998FE517}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\moitestwebsql-az.json = PublishScripts\Templates\moitestwebsql-az.json
+		PublishScripts\Templates\moitestwebsql-az.param.dev.json = PublishScripts\Templates\moitestwebsql-az.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC4043E6-ACD7-4D20-943C-CA6AAC84E6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4043E6-ACD7-4D20-943C-CA6AAC84E6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4043E6-ACD7-4D20-943C-CA6AAC84E6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4043E6-ACD7-4D20-943C-CA6AAC84E6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BEEBBE2-542A-414C-A10F-BF7954E532D9} = {FA85C86B-FABD-4A93-91BD-26791004F1E2}
+		{5819F961-2302-4A88-88DC-FC01998FE517} = {FA85C86B-FABD-4A93-91BD-26791004F1E2}
+	EndGlobalSection
+EndGlobal
